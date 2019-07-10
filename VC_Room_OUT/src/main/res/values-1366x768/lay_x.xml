@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="x8">8.53px</dimen>
+<dimen name="x10">10.66px</dimen>
+    <dimen name="x15">16.0px</dimen>
+    <dimen name="x18">19.2px</dimen>
+    <dimen name="x20">21.33px</dimen>
+    <dimen name="x24">25.6px</dimen>
+<dimen name="x25">26.66px</dimen>
+    <dimen name="x30">32.0px</dimen>
+    <dimen name="x32">34.13px</dimen>
+    <dimen name="x40">42.66px</dimen>
+    <dimen name="x42">44.8px</dimen>
+    <dimen name="x48">51.2px</dimen>
+    <dimen name="x60">64.0px</dimen>
+    <dimen name="x110">117.33px</dimen>
+    <dimen name="x120">128.0px</dimen>
+    <dimen name="x130">138.66px</dimen>
+    <dimen name="x200">213.33px</dimen>
+    <dimen name="x240">256.0px</dimen>
+    <dimen name="x409">436.26px</dimen>
+    <dimen name="x432">460.8px</dimen>
+    <dimen name="x435">464.0px</dimen>
+    <dimen name="x480">512.0px</dimen>
+    <dimen name="x540">576.0px</dimen>
+    <dimen name="x640">682.66px</dimen>
+</resources>

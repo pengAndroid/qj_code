@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_client_main_bg" >
+
+
+    <TextClock
+        android:id="@+id/main_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x25"
+        android:format12Hour="yyyy年M月d日 HH:mm:ss"
+        android:format24Hour="yyyy年M月d日 HH:mm:ss"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x60" />
+
+    <Button
+    android:id="@+id/main_call_btn"
+    android:layout_width="@dimen/x435"
+    android:layout_height="@dimen/x432"
+    android:layout_marginTop="@dimen/x40"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center_horizontal|bottom"
+    android:paddingBottom="@dimen/x110"
+    android:background="@drawable/main_call_btn_bg"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/x40" />
+
+
+</RelativeLayout>

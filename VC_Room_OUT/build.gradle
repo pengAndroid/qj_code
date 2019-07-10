@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+
+    defaultConfig {
+//        applicationId "com.demo.li.vc_room_out"
+        minSdkVersion 17
+        targetSdkVersion 21
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters  "armeabi-v7a", "armeabi"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api(name: 'LiteAVSDK_Professional_5.0.4981', ext: 'aar')
+    api 'com.android.support:appcompat-v7:26.1.0'
+    api 'com.google.code.gson:gson:2.2.4'
+    api 'com.android.support:appcompat-v7:26.1.0'
+
+}

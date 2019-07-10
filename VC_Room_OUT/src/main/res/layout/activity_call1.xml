@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x640"
+    android:layout_height="@dimen/x480"
+    android:background="@color/activity_call_bg_color">
+
+
+    <RelativeLayout
+        android:id="@+id/big_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000">
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/call_remote_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/smaill_layout"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginBottom="@dimen/y15"
+        android:background="#80000000">
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/call_local_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/call_toast_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:shadowColor="#80000000"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="10"
+        android:text="正在呼叫室内，请稍候..."
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x18" />
+
+    <Button
+        android:id="@+id/call_cut_btn"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/call_cut_bg" />
+
+
+</RelativeLayout>

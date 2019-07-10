@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x640"
+    android:layout_height="@dimen/x480"
+    android:background="@drawable/activity_other_setting_bg"
+    android:paddingLeft="@dimen/x48"
+    android:paddingRight="@dimen/x48">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="服务器IP地址："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x24" />
+
+            <EditText
+                android:id="@+id/setting_server_ip_et"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="@dimen/y40"
+                android:background="@drawable/shadow_border_bg"
+                android:digits="1234567890."
+                android:gravity="left|center_vertical"
+                android:hint="例：192.168.1.10"
+                android:inputType="numberDecimal"
+                android:maxLength="21"
+                android:paddingLeft="@dimen/x10"
+                android:textColor="@color/white_text_color"
+                android:textColorHint="@color/white_text_color_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="室内IP地址："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x24" />
+
+            <EditText
+                android:id="@+id/setting_station_ip_et"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="@dimen/y40"
+                android:background="@drawable/shadow_border_bg"
+                android:digits="1234567890."
+                android:gravity="left|center_vertical"
+                android:hint="例：192.168.1.11"
+                android:inputType="numberDecimal"
+                android:maxLength="21"
+                android:paddingLeft="@dimen/x10"
+                android:textColor="@color/white_text_color"
+                android:textColorHint="@color/white_text_color_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="设备名称："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x24" />
+
+            <EditText
+                android:id="@+id/setting_name_et"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="@dimen/y50"
+                android:background="@drawable/shadow_border_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:textColor="@color/white_text_color"
+                android:textColorHint="@color/white_text_color_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="设备编号："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x24" />
+
+            <EditText
+                android:id="@+id/setting_number_et"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="@dimen/y40"
+                android:background="@drawable/shadow_border_bg"
+                android:gravity="left|center_vertical"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="@dimen/x10"
+                android:textColor="@color/white_text_color"
+                android:textColorHint="@color/white_text_color_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="设置推流分辨率："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x20" />
+            <Spinner
+                android:id="@+id/setting_video_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="@dimen/y40"
+                android:background="@drawable/shadow_border_bg"
+                >
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/setting_ok_btn"
+                android:layout_width="@dimen/x130"
+                android:layout_height="@dimen/y60"
+                android:background="@drawable/selsect_in_tele_btn"
+                android:text="确定"
+                android:gravity="center"
+                android:padding="@dimen/x10"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x24" />
+
+            <Button
+                android:id="@+id/setting_cancel_btn"
+                android:layout_width="@dimen/x130"
+                android:layout_height="@dimen/y60"
+                android:padding="@dimen/x10"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selsect_in_tele_btn"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="@dimen/x300"-->
+        <!--android:layout_height="@dimen/y70"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="@dimen/y40" >-->
+
+        <!--<Button-->
+            <!--android:id="@+id/setting_ok_btn"-->
+            <!--android:layout_width="@dimen/x130"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/setting_btn_bg"-->
+            <!--android:text="确定"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/x36" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/setting_cancel_btn"-->
+            <!--android:layout_width="@dimen/x130"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/setting_btn_bg"-->
+            <!--android:text="取消"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/x36" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>
